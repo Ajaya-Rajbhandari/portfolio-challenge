@@ -1,5 +1,37 @@
+.skills{
+    padding: 2rem 0;
+}
+
 .skillsList{
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skillBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
+}
+
+.skillName{
+    flex: 0 0 100px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.skillLevelContainer{
+    flex: 1;
+    height: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.skillLevel{
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.5s ease-out;
 }

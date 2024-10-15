@@ -2,11 +2,19 @@
 .home{
     text-align: center;
     padding: 2rem 0;
+    animation: fadeIn 1s ease-in;
 }
 
 .home h1{   
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    animation: slidInFromTop 1s ease-out;
+}
+
+.home p{
+    animation: slidInFromTop 1s ease-out 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .cta-button{
@@ -18,8 +26,41 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    animation: pulseButton 2s infinite;
 }
 
 .cta-button:hover{
     background-color: #2980b9;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slidInFromTop{
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulseButton{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

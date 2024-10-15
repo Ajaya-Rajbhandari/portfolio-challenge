@@ -15,6 +15,14 @@ const Skills = () => {
     { skill: "React", level: 80 },
     { skill: "Node.js", level: 75 },
     { skill: "Express", level: 70 },
+    { skill: "MongoDB", level: 65 },
+    { skill: "Tailwind", level: 60 },
+    { skill: "Git", level: 55 },
+    { skill: "GitHub", level: 50 },
+    { skill: "Docker", level: 45 },
+    { skill: "Kubernetes", level: 40 },
+    { skill: "AWS", level: 35 },
+    { skill: "Azure", level: 30 },
   ];
   return (
     <div className={styles.skills}>

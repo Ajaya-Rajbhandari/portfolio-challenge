@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "../Styles/Project.module.css";
+import image from "../Assets/ChangeIsComing.jpg";
 const ProjectCard = ({ title, description, technologies, link }) => (
   <div className={styles.projectCard}>
+    <img src={image} alt={title} loading="lazy" />
     <h3>{title}</h3>
     <p>{description}</p>
     <p>Technologies:{technologies.join(", ")}</p>
